@@ -110,10 +110,11 @@ export default function CartPage() {
               <span>${totalPrice.toFixed(2)}</span>
             </div>
           </div>
-          
+          <Link href={`/checkout`}>
           <button className="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700">
             Proceed to Checkout
           </button>
+          </Link>
           
           <div className="mt-4">
             <Link href="/products" className="text-blue-600 hover:text-blue-800 text-sm flex items-center justify-center">

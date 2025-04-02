@@ -12,6 +12,7 @@
     "@clerk/nextjs": "^6.12.12",
     "@reduxjs/toolkit": "^2.6.1",
     "next": "^14.2.25",
+    "razorpay": "^2.9.6",
     "react": "^18",
     "react-dom": "^18",
     "react-redux": "^9.2.0"
