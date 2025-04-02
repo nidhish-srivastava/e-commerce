@@ -1,4 +1,7 @@
 import localFont from "next/font/local";
+import {
+  ClerkProvider,
+} from '@clerk/nextjs'
 import "@/styles/globals.css"
 import { ReduxProvider } from "@/utils/providers";
 import Navbar from "@/components/common/Navbar";
@@ -20,6 +23,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -30,5 +34,6 @@ export default function RootLayout({ children }) {
         </ReduxProvider>
       </body>
     </html>
+        </ClerkProvider>
   );
 }
